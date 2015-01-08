@@ -8,7 +8,7 @@
 #  Makefile
 #
 CC = gcc
-CFLAGS = -Wall -Wno-unused-but-set-variable -g -O0 -mtune=generic -x c
+CFLAGS = -Wall -Wno-unused-but-set-variable -O0 -mtune=generic -x c
 APP_NAME=coremod
 SRC_PATH=.
 OBJ_PATH=./obj

@@ -1,11 +1,11 @@
 /*
  * CoreMod by CyrIng
  * 
- * Copyright (C) 2012 CYRIL INGENIERIE
+ * Copyright (C) 2012-2015 CYRIL INGENIERIE
  * 
  * Licenses: GPL2
  * 
- * coremod.c release 2012-0.1.4
+ * coremod.c release 2015-1.1.5
  */
 
 #include <stdio.h>
@@ -213,8 +213,10 @@ struct STRING *SMB_Dig_Strings(struct PACKED *packed, int ID)
 		pstr->Link=SMB_Dig_Strings(packed, ID);
 		return(pstr);
 	}
-	else
+	else {
+		free(buffer);
 		return(NULL);
+	}
 }
 
 struct STRING *SMB_Read_Strings(struct PACKED *packed)
@@ -345,6 +347,7 @@ void BIOS_Free_Structure(struct STRUCTINFO *smb)
 		while(pstr!=NULL)
 		{
 			Link=pstr->Link;
+			free(pstr->Buffer);
 			free(pstr);
 			pstr=Link;
 		};

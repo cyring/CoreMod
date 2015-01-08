@@ -1,15 +1,15 @@
 /*
  * CoreMod by CyrIng
  * 
- * Copyright (C) 2012 CYRIL INGENIERIE
+ * Copyright (C) 2012-2015 CYRIL INGENIERIE
  * 
  * Licenses: GPL2
  * 
  * coremod.h
  */
 
-#define _MAJOR   "0"
-#define _MINOR   "1.4"
+#define _MAJOR   "1"
+#define _MINOR   "1.5"
 #define _NIGHTLY "0"
 #define AutoDate "CoreMod "_MAJOR"."_MINOR"-"_NIGHTLY"    (C) CYRIL INGENIERIE    "__DATE__
 static  char    version[] = AutoDate;
@@ -589,7 +589,7 @@ struct MENUNAV
 
 #define MENU_PROMPT_MORE "[<]  [RETURN]                                                    "
 #define MENU_PROMPT_ROOT "[E]xit    [H]elp       [S]how         [D]ump       [M]odify      "
-#define	MENU_PROMPT_HELP "[<]Back                     (C)2012 CyrIng                       "
+#define	MENU_PROMPT_HELP "[<]Back                     (C)2012-2015 CyrIng                  "
 #define MENU_PROMPT_SHOW "[<]Back   [C]ore       [P]rocessor    [F]eatures   [S]ystem      "
 #define MENU_PROMPT_DUMP "[<]Back   [A]ttributes                [S]trings                  "
 #define MENU_PROMPT_ATTR "[<]Back   [B]ios       [M]otherboard  [P]rocessor  [C]ache  [R]AM"
