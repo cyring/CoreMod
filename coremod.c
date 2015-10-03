@@ -5,7 +5,7 @@
  * 
  * Licenses: GPL2
  * 
- * coremod.c release 2015-1.1.5
+ * coremod.c release 2015-1.1.6
  */
 
 #include <stdio.h>
