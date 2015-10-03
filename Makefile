@@ -1,7 +1,7 @@
 #
 #  CoreMod by CyrIng
 #
-#  Copyright (C) 2012 CYRIL INGENIERIE
+#  Copyright (C) 2012-2015 CYRIL INGENIERIE
 #
 #  Licenses: GPL2
 #
